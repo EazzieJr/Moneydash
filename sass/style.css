@@ -22,56 +22,8 @@ html {
   color: #333;
 }
 
-.loader .container {
-  -webkit-perspective: 100px;
-          perspective: 100px;
-}
-
-.loader .container .one {
-  animation: increase 1s ease-in-out infinite;
-  -webkit-animation: increase 1s ease-in-out infinite;
-}
-
-@-webkit-keyframes increase {
-  0% {
-    height: 12px;
-  }
-  50% {
-    padding: 14px 0px 14px 0px;
-    border: white;
-    background-color: #3F6F9C;
-  }
-}
-
-@keyframes increase {
-  0% {
-    height: 12px;
-  }
-  50% {
-    padding: 14px 0px 14px 0px;
-    border: white;
-    background-color: #3F6F9C;
-  }
-}
-
-.loader .container .two {
-  animation: increase 1s .2s ease-in-out infinite;
-  -webkit-animation: increase 1s .2s ease-in-out infinite;
-}
-
-.loader .container .three {
-  animation: increase 1s .4s ease-in-out infinite;
-  -webkit-animation: increase 1s .4s ease-in-out infinite;
-}
-
-.loader .container .four {
-  animation: increase 1s .6s ease-in-out infinite;
-  -webkit-animation: increase 1s .6s ease-in-out infinite;
-}
-
-.loader .container .five {
-  animation: increase 1s .8s ease-in-out infinite;
-  -webkit-animation: increase 1s .8s ease-in-out infinite;
+.loader .container svg {
+  fill: white;
 }
 
 nav .nav-container {

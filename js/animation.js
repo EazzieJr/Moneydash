@@ -1,60 +1,45 @@
 var tl = gsap.timeline();
 
-// tl.to('.svg-logo', {
-//     duration: 2,
-//     x: 0,
-//     delay: 1,
-//     ease: 'bounce',
-// })
+gsap.to('html', {
+    overflowY: 'hidden',
+})
 
-tl.to('.l-m', {
-    x: 0,
+tl.to('.loader .container .svg-circle, .loader .container .svg-dollar', {
+    duration: 1,
+    y: 0,
+    delay: 2
+})
+
+tl.to('.loader .container .svg-circle', {
     duration: 2,
-    ease: 'bounce',
+    rotateY: 360,
+    repeat: Infinity,
+    ease: 'none',
     delay: 1
 })
 
-tl.to('.left', {
-    y: 100,
-    delay: 0.5,
-    duration:1
-})
-
-tl.to('.right', {
-    y: -100,
-    delay: -1,
-    duration:1
-})
-
-tl.to('.write', {
+tl.to('.loader .container .svg-dollar', {
     duration: 1,
-    text: "loading...",
-    yoyo: true,
-    repeat: 2,
-    repeatDelay: 1,
+    rotateY: 360,
+    repeat: Infinity,
+    ease: 'none',
+    delay: -2
 })
 
-// tl.to(".l-m", {
-//     repeat: 0,
-//     yoyo: true,
-//     duration: 1, 
-//     // ease: 'elastic',
-//     text: "Moneydash", 
-//     // delay: 2.5,
-// });
+gsap.to('.loader .container .svg-circle, .loader .container .svg-dollar', {
+    duration: 1,
+    y: -70,
+    delay: 10,
+})
 
+gsap.to('.loader', {
+    duration: 0.5,
+    rotateY: 90,
+    delay: 11,
+    display: 'none'
+})
 
-// tl.to('.svg-logo', {
-//     y: 100,
-//     duration: 1,
-//     delay: 1,
-// })
-
-// tl.to(".l-m", {
-//     repeat: 3,
-//     repeatDelay: 0.5,
-//     yoyo: true,
-//     duration: 3, 
-//     text: "Loading...", 
-//     delay: 1,
-// });
+gsap.to('html', {
+    overflowY: 'visible',
+    delay: 11.7
+})

@@ -5,7 +5,12 @@
     scroll-behavior: smooth;
 }
 
+// .show {
+//     overflow: visible;
+// }
+
 html {
+    // overflow: hidden;
     overflow-x: hidden;
 }
 
@@ -26,52 +31,10 @@ html {
 .loader {
 
     .container {
-        perspective: 100px;
-
-//         .l-m {
-//             transform: rotateX(50deg);
-//             -webkit-transform: rotateX(50deg);
-//             -moz-transform: rotateX(50deg);
-//             -ms-transform: rotateX(50deg);
-//             -o-transform: rotateX(50deg);
-// }
         
-        .one {
-            animation: increase 1s ease-in-out infinite;
-            -webkit-animation: increase 1s ease-in-out infinite;
-    
-            @keyframes increase {
-                0% {
-                    height: 12px;
-                }
-    
-                50% {
-                    padding: 14px 0px 14px 0px;
-                    border: white;
-                    background-color: #3F6F9C;
-                }
-            }
-        }
-
-        .two {
-            animation: increase 1s .2s ease-in-out infinite;
-            -webkit-animation: increase 1s .2s ease-in-out infinite;
-        }
-
-        .three {
-            animation: increase 1s .4s ease-in-out infinite;
-            -webkit-animation: increase 1s .4s ease-in-out infinite;
-        }
-
-        .four {
-            animation: increase 1s .6s ease-in-out infinite;
-            -webkit-animation: increase 1s .6s ease-in-out infinite;
-        }
-
-        .five {
-            animation: increase 1s .8s ease-in-out infinite;
-            -webkit-animation: increase 1s .8s ease-in-out infinite;
-        }
+        svg {
+            fill: white;
+}
     }
 }
 
