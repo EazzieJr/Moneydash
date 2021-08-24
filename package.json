@@ -1,0 +1,23 @@
+{
+  "name": "MoneyDash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/public/styles/tailwind.css -o src/private/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.3.1",
+    "gsap": "^3.7.1",
+    "jquery.counterup": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "swiper": "^6.8.0",
+    "tailwindcss": "^2.2.7"
+  }
+}
